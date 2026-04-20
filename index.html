@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Animated Page</title>
 
-    <!-- Link CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>My Website</h1>
-    <p>Welcome to my first HTML & CSS page</p>
+    <h1 class="fade-in">My Animated Website</h1>
+    <p class="fade-in delay">Welcome with smooth animation</p>
 </header>
 
 <nav>
@@ -22,19 +21,21 @@
 </nav>
 
 <div class="container">
-    <div class="card">
-        <h2>Card Title 1</h2>
-        <p>This is a simple card layout using HTML and CSS.</p>
+    <div class="card slide-up">
+        <h2>Card 1</h2>
+        <p>This card slides up when page loads.</p>
+        <button class="btn">Click Me</button>
     </div>
 
-    <div class="card">
-        <h2>Card Title 2</h2>
-        <p>You can customize this layout as per your needs.</p>
+    <div class="card slide-up delay">
+        <h2>Card 2</h2>
+        <p>Hover over this card for animation.</p>
+        <button class="btn">Click Me</button>
     </div>
 </div>
 
 <footer>
-    <p>© 2026 My Website</p>
+    <p>© 2026 Animated Website</p>
 </footer>
 
 </body>
