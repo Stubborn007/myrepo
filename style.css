@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #74ebd5, #9face6);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover animation */
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Button animation */
+.btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: orange;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.delay {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide Up Animation */
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.slide-up.delay {
+    animation-delay: 0.5s;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
